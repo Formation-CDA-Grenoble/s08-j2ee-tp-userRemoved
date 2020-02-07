@@ -22,13 +22,13 @@ public class UserController {
     @Autowired 
     private UserRepository userRepository;
     
-    @GFDGFDGFDGFDGFDGDFG
+   
     @GetMapping("")
     public List<User> getAllUsers() {
         return userRepository.findAll();
     }
 
-    @GFDGFDGFDGFDGFDGDFG
+   
     @PostMapping("")
   
     @ResponseStatus(value = HttpStatus.CREATED)
@@ -37,7 +37,7 @@ public class UserController {
         return userRepository.save(user);
     }
 
-    @GFDGFDGFDGFDGFDGDFG
+   
     @PutMapping("/{id}")
     public User updateUser(@PathVariable(value = "id") Long userId, @Valid @RequestBody User newUser) {
         
@@ -48,11 +48,11 @@ public class UserController {
 
         return userRepository.save(user);
     } 
-    @GFDGFDGFDGFDGFDGDFG
+    
     @GetMapping("/{id}")
     public User getUserById(@PathVariable(value = "id") Long userId) {
         return this.fetchUser(userId);
-    } @GFDGFDGFDGFDGFDGDFG
+    } 
   
     @DeleteMapping("/{id}")
   
