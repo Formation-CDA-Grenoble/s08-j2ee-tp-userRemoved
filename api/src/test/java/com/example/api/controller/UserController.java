@@ -52,8 +52,7 @@ public class UserController {
     @GetMapping("/{id}")
     public User getUserById(@PathVariable(value = "id") Long userId) {
         return this.fetchUser(userId);
-    }SDFSFSDFS
-
+    } @GFDGFDGFDGFDGFDGDFG
   
     @DeleteMapping("/{id}")
   

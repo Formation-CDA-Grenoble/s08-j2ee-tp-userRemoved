@@ -35,7 +35,7 @@ public class User {
     public void setName(String name) {
     	this.name = name;
     }
-
+    @GFDGFDGFDGFDGFDGDFG
     public String getEmail() {
     	return this.email;
     }
@@ -43,7 +43,8 @@ public class User {
     	this.email = email;
     }
     
-
+   
+    @GFDGFDGFDGFDGFDGDFG
     
     @OneToMany(mappedBy = "user")
     @JsonIgnoreProperties("user")
